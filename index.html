@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="fr" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <script>
+      // Ensure window.fetch is writable and has a setter so Chrome extensions can intercept requests without TypeError
+      (function() {
+        try {
+          var originalFetch = window.fetch;
+          var proto = window.constructor ? window.constructor.prototype : Window.prototype;
+          // Define on prototype and window instance
+          [window, proto, Object.getPrototypeOf(window) || {}].forEach(function(target) {
+            try {
+              if (target) {
+                Object.defineProperty(target, 'fetch', {
+                  configurable: true,
+                  enumerable: true,
+                  get: function() { return originalFetch; },
+                  set: function(fn) { originalFetch = fn; }
+                });
+              }
+            } catch (_) {}
+          });
+          window.fetch = originalFetch;
+        } catch (_) {}
+      })();
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cortia Video Studio - Montage & Scripts Viraux</title>
+    <meta name="description" content="Plateforme IA de remix et montage vidéo automatisé pour TikTok et YouTube Shorts : sélection de hook, floutage Caption Mask, voix IA et script viral optimisé." />
+    <meta property="og:title" content="Cortia Video Studio - Montage & Scripts Viraux" />
+    <meta property="og:description" content="Plateforme IA de remix et montage vidéo automatisé pour TikTok et YouTube Shorts : sélection de hook, floutage Caption Mask, voix IA et script viral optimisé." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&family=Noto+Sans+SC:wght@500;700;900&family=Noto+Sans+JP:wght@500;700;900&family=Noto+Sans+KR:wght@500;700;900&display=swap" rel="stylesheet">
+  </head>
+  <body class="bg-[#0b0f17] text-slate-100 font-sans antialiased selection:bg-emerald-500/30 selection:text-emerald-300">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

@@ -1,0 +1,170 @@
+{
+  "users": [
+    {
+      "id": "usr_1793918056660",
+      "name": "Ami Parraine",
+      "email": "test.ami.parraine@gmail.com",
+      "authProvider": "google",
+      "passwordHash": "c5b6cc6d4f10fca25772cb916831dad6782393665987168300a632945e83a7c3",
+      "role": "user",
+      "credits": 2,
+      "maxCredits": 2,
+      "isUnlimited": false,
+      "plan": "TIK",
+      "billingCycle": "monthly",
+      "memberSince": "05 nov. 2026",
+      "videosCreatedThisMonth": 0,
+      "maxVideosMonth": 1,
+      "hasMonetizedAccount": false,
+      "estimatedMonthlyEarnings": 0,
+      "avatarUrl": "/src/assets/images/creator_avatar_pixar_1793963430354.jpg",
+      "creations": [],
+      "invoices": [],
+      "referralCount": 0,
+      "referralCreditsEarned": 0,
+      "referrals": [],
+      "referralCode": "TESTA5052",
+      "referredBy": "ACCEP9480"
+    },
+    {
+      "id": "usr_owner_1",
+      "name": "Propriétaire Cortia (Admin)",
+      "email": "accepteurbronze07@gmail.com",
+      "passwordHash": "c9754d2f7eb6dcb414c3ef0c1765d11ea694da0e918d4791e1eb48b5184712b8",
+      "role": "admin",
+      "credits": 77,
+      "maxCredits": 77,
+      "isUnlimited": false,
+      "plan": "PRO",
+      "billingCycle": "monthly",
+      "memberSince": "24 Oct 2026",
+      "videosCreatedThisMonth": 13,
+      "maxVideosMonth": 75,
+      "hasMonetizedAccount": true,
+      "estimatedMonthlyEarnings": 840,
+      "avatarUrl": "/src/assets/images/creator_avatar_cyber_1793963428734.jpg",
+      "creations": [],
+      "invoices": [
+        {
+          "id": "INV-2026-003",
+          "date": "24 Oct 2026",
+          "amount": "24 000 FCFA (37€)",
+          "plan": "Plan PRO Mensuel",
+          "method": "Orange Money",
+          "status": "Payé"
+        },
+        {
+          "id": "INV-2026-002",
+          "date": "24 Sep 2026",
+          "amount": "24 000 FCFA (37€)",
+          "plan": "Plan PRO Mensuel",
+          "method": "Wave",
+          "status": "Payé"
+        }
+      ],
+      "referralCode": "ACCEP9480",
+      "referralCount": 1,
+      "referralCreditsEarned": 3,
+      "referrals": [
+        {
+          "id": "ref_1793918066019",
+          "referredEmail": "test.ami.parraine@gmail.com",
+          "referredName": "Ami Parraine",
+          "date": "05 nov. 2026",
+          "creditsRewarded": 3
+        }
+      ]
+    },
+    {
+      "id": "usr_client_2",
+      "name": "Koffi Kouamé",
+      "email": "koffi.shorts@gmail.com",
+      "passwordHash": "a0a3839bc5d6c62cd08dadcf80100018475d22bd4f2463919034d0d115249b32",
+      "role": "user",
+      "credits": 19,
+      "maxCredits": 25,
+      "isUnlimited": false,
+      "plan": "TIK",
+      "billingCycle": "monthly",
+      "memberSince": "18 Oct 2026",
+      "videosCreatedThisMonth": 6,
+      "maxVideosMonth": 25,
+      "hasMonetizedAccount": true,
+      "estimatedMonthlyEarnings": 320,
+      "creations": [],
+      "invoices": [
+        {
+          "id": "INV-2026-104",
+          "date": "18 Oct 2026",
+          "amount": "11 000 FCFA (17€)",
+          "plan": "Plan TIK Mensuel",
+          "method": "Wave Mobile Money",
+          "status": "Payé"
+        }
+      ]
+    },
+    {
+      "id": "usr_client_3",
+      "name": "Sarah Diallo",
+      "email": "sarah.viral@gmail.com",
+      "passwordHash": "a0a3839bc5d6c62cd08dadcf80100018475d22bd4f2463919034d0d115249b32",
+      "role": "user",
+      "credits": 9999,
+      "maxCredits": 9999,
+      "isUnlimited": true,
+      "plan": "ELITE",
+      "billingCycle": "annual",
+      "memberSince": "05 Oct 2026",
+      "videosCreatedThisMonth": 48,
+      "maxVideosMonth": 9999,
+      "hasMonetizedAccount": true,
+      "estimatedMonthlyEarnings": 2450,
+      "creations": [],
+      "invoices": [
+        {
+          "id": "INV-2026-089",
+          "date": "05 Oct 2026",
+          "amount": "50 000 FCFA (77€)",
+          "plan": "Plan ELITE Illimité",
+          "method": "Orange Money",
+          "status": "Payé"
+        }
+      ]
+    }
+  ],
+  "sessions": {
+    "default_owner_token": "usr_owner_1",
+    "tok_f4026d0700a30bb8bbe6101a5105ee75": "usr_1793918056660"
+  },
+  "paymentConfig": {
+    "activeGateway": "cinetpay",
+    "cinetpayApiKey": "",
+    "cinetpaySiteId": "",
+    "paydunyaMasterKey": "",
+    "paydunyaPrivateKey": "",
+    "paydunyaToken": "",
+    "fedapayPublicKey": "",
+    "fedapaySecretKey": "",
+    "orangeMoneyNumber": "+225 07 00 00 00 00",
+    "moovMoneyNumber": "+225 01 00 00 00 00",
+    "waveNumber": "+225 05 00 00 00 00",
+    "mtnMoneyNumber": "+225 05 00 00 00 00",
+    "paymentLinkTik": "",
+    "paymentLinkPro": "",
+    "paymentLinkElite": "",
+    "paymentLinks": {
+      "TIK_monthly": "",
+      "TIK_annual": "",
+      "PRO_monthly": "",
+      "PRO_annual": "",
+      "ELITE_monthly": "",
+      "ELITE_annual": ""
+    },
+    "whatsappSupport": "+225 07 00 00 00 00",
+    "creatomateApiKey": "",
+    "creatomateTemplateId": "",
+    "makeWebhookUrl": "",
+    "rapidApiKey": ""
+  },
+  "pendingPayments": []
+}

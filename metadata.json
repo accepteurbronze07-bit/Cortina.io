@@ -1,0 +1,6 @@
+{
+  "name": "Cortia Video Studio - Montage & Scripts Viraux",
+  "description": "Plateforme IA de remix et montage vidéo automatisé pour TikTok et YouTube Shorts : sélection de hook, floutage Caption Mask, voix IA et script viral optimisé.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

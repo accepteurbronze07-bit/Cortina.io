@@ -1,0 +1,186 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #0b0f17;
+    color: #f1f5f9;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0d121d;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}
+
+/* Animations and glow */
+@keyframes pulse-subtle {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.85; transform: scale(0.99); }
+}
+
+.animate-pulse-subtle {
+  animation: pulse-subtle 3s infinite ease-in-out;
+}
+
+/* Range input styling */
+input[type="range"] {
+  accent-color: #10b981;
+}
+
+/* ==========================================================
+   HIGH-VISIBILITY LIGHT THEME STYLES (.theme-light / [data-theme="light"])
+   ========================================================== */
+.theme-light,
+[data-theme="light"] {
+  background-color: #f8fafc !important;
+  color: #0f172a !important;
+}
+
+.theme-light body,
+[data-theme="light"] body {
+  background-color: #f8fafc !important;
+  color: #0f172a !important;
+}
+
+.theme-light ::-webkit-scrollbar-track,
+[data-theme="light"] ::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+.theme-light ::-webkit-scrollbar-thumb,
+[data-theme="light"] ::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+}
+
+.theme-light ::-webkit-scrollbar-thumb:hover,
+[data-theme="light"] ::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Background surfaces */
+.theme-light .bg-\[\#0b0f17\],
+[data-theme="light"] .bg-\[\#0b0f17\],
+.theme-light .bg-\[\#0d121d\],
+[data-theme="light"] .bg-\[\#0d121d\] {
+  background-color: #f8fafc !important;
+}
+
+.theme-light .bg-\[\#0f1522\],
+[data-theme="light"] .bg-\[\#0f1522\],
+.theme-light .bg-\[\#111724\],
+[data-theme="light"] .bg-\[\#111724\],
+.theme-light .bg-\[\#111726\],
+[data-theme="light"] .bg-\[\#111726\] {
+  background-color: #ffffff !important;
+  box-shadow: 0 4px 20px -2px rgba(15, 23, 42, 0.06), 0 2px 6px -1px rgba(15, 23, 42, 0.04) !important;
+}
+
+.theme-light .bg-slate-900,
+[data-theme="light"] .bg-slate-900,
+.theme-light .bg-slate-900\/60,
+[data-theme="light"] .bg-slate-900\/60,
+.theme-light .bg-slate-900\/80,
+[data-theme="light"] .bg-slate-900\/80,
+.theme-light .bg-slate-900\/90,
+[data-theme="light"] .bg-slate-900\/90 {
+  background-color: #f1f5f9 !important;
+}
+
+.theme-light header,
+[data-theme="light"] header {
+  background-color: rgba(255, 255, 255, 0.95) !important;
+  border-bottom-color: #e2e8f0 !important;
+}
+
+.theme-light aside,
+[data-theme="light"] aside {
+  background-color: #ffffff !important;
+  border-right-color: #e2e8f0 !important;
+}
+
+.theme-light .bg-slate-800,
+[data-theme="light"] .bg-slate-800 {
+  background-color: #e2e8f0 !important;
+}
+
+/* Borders */
+.theme-light .border-slate-800,
+[data-theme="light"] .border-slate-800,
+.theme-light .border-slate-800\/60,
+[data-theme="light"] .border-slate-800\/60,
+.theme-light .border-slate-800\/80,
+[data-theme="light"] .border-slate-800\/80,
+.theme-light .border-slate-800\/90,
+[data-theme="light"] .border-slate-800\/90,
+.theme-light .border-slate-700,
+[data-theme="light"] .border-slate-700 {
+  border-color: #e2e8f0 !important;
+}
+
+/* Typography contrast */
+.theme-light .text-white,
+[data-theme="light"] .text-white {
+  color: #0f172a !important;
+}
+
+.theme-light .text-slate-100,
+[data-theme="light"] .text-slate-100,
+.theme-light .text-slate-200,
+[data-theme="light"] .text-slate-200 {
+  color: #1e293b !important;
+}
+
+.theme-light .text-slate-300,
+[data-theme="light"] .text-slate-300,
+.theme-light .text-slate-400,
+[data-theme="light"] .text-slate-400 {
+  color: #475569 !important;
+}
+
+.theme-light .text-slate-500,
+[data-theme="light"] .text-slate-500 {
+  color: #64748b !important;
+}
+
+/* Interactive elements & inputs */
+.theme-light input,
+[data-theme="light"] input,
+.theme-light textarea,
+[data-theme="light"] textarea,
+.theme-light select,
+[data-theme="light"] select {
+  background-color: #ffffff !important;
+  color: #0f172a !important;
+  border-color: #cbd5e1 !important;
+}
+
+.theme-light input::placeholder,
+[data-theme="light"] input::placeholder,
+.theme-light textarea::placeholder,
+[data-theme="light"] textarea::placeholder {
+  color: #94a3b8 !important;
+}
+
+.theme-light .hover\:bg-slate-800:hover,
+[data-theme="light"] .hover\:bg-slate-800:hover,
+.theme-light .hover\:bg-slate-900:hover,
+[data-theme="light"] .hover\:bg-slate-900:hover {
+  background-color: #e2e8f0 !important;
+}
+
